@@ -1,10 +1,19 @@
+from cgitb import handler
 from http.client import HTTPException
 import string
 from app import MAX_INPUT_LENGTH
 from fastapi import FastAPI
 from app import generate_branding_snippet, generate_keywords
+from mangum import Mangum
+
 
 app = FastAPI()
+
+handler = Mangum(app)
+
+MAX_INPUT_LENGTH = 32
+
+#we need a handler function for lambda to call to kickstart this
 
 
 @app.get("/generate_snippet")

@@ -1,8 +1,9 @@
 from typing import List
-import os
+# from decouple import config
 import openai
 import argparse
 import re
+
 
 MAX_INPUT_LENGTH = 12
 
@@ -27,7 +28,7 @@ def validate_length(prompt: str) -> bool:
 
 def generate_keywords(prompt: str) -> List[str]:
     # Load your API key from an environment variable or secret management service
-    openai.api_key = "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"
+    openai.api_key = "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"
     enriched_prompt = f"Generate related branding keywords for {prompt}: "
     print(f"Enriched prompt: {enriched_prompt}")
 
@@ -49,7 +50,7 @@ def generate_keywords(prompt: str) -> List[str]:
 
 def generate_branding_snippet(prompt: str):
 
-    openai.api_key = "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"
+    openai.api_key = "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"
 
     enriched_prompt = f"Generate upbeat poem for {prompt}: "
 
