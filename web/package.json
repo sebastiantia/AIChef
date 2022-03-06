@@ -9,11 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "file-saver": "^2.0.5",
     "next": "12.1.0",
     "react": "17.0.2",
     "react-dom": "17.0.2"
   },
   "devDependencies": {
+    "@types/file-saver": "^2.0.5",
     "@types/node": "17.0.21",
     "@types/react": "17.0.39",
     "autoprefixer": "^10.4.2",

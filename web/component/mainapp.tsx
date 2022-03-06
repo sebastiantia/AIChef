@@ -37,7 +37,7 @@ const MainApp: React.FC = () => {
     setloading(false);
   };
   const gradientTextStyle =
-    "text-white text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-fuchsia-900 font-light w-fit mx-auto";
+    "text-white text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-fuchsia-900 font-light w-fit mx-auto";
 
   return (
     <>
@@ -45,7 +45,7 @@ const MainApp: React.FC = () => {
         <div className="max-w-xlg m-auto p-6 ">
           <div className="bg-neutral-400 p-10 rounded-md">
             <img className="max-h-14 block m-auto " src="./chef.png" />
-            <h1 className={gradientTextStyle + " text-7xl text-center"}>
+            <h1 className={gradientTextStyle + " text-7xl text-center fill-white"}>
               AIChef
             </h1>
             <div className={gradientTextStyle + " text-l text-center "}>Your AI chef assistant</div>

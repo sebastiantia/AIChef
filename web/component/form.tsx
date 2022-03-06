@@ -11,6 +11,8 @@ const Form: React.FC<FormProps> = ({
   onSubmit,
   loading,
 }) => {
+
+
   return (
     <>
       <p className="text-center">
@@ -36,7 +38,7 @@ const Form: React.FC<FormProps> = ({
       <button
         onClick={onSubmit}
         disabled={loading}
-        className="bg-gradient-to-r mt-5 from-orange-300
+        className="bg-gradient-to-r mt-5 from-teal-400
         to-fuchsia-900 disabled:opacity-50 w-full p-2 rounded-md text-lg hover:text-white"
       >
         Submit
