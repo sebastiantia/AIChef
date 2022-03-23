@@ -1,6 +1,9 @@
 ## AIChef: https://aichef.vercel.app/ 
 
+A simple web service leveraging OpenAI's "davinci-instruct-beta-v3" engine to generate complete recipes from user-inputted ingrediants.
+API interacting with engine created with Python's FastAPI with Next.js on the client side. 
 
+Backend service is organized into a AWS lambda function with a HTTP endpoint provided by Amazon API Gateway. Front-end deployed on vercel because no $
 ## Setup
 
 1. If you don’t have Python installed, [install it from here](https://www.python.org/downloads/)
